@@ -20,8 +20,7 @@ import MoveForm from './MoveForm';
 import GeneralForm from './GeneralForm';
 import { CATEGORY_OPTIONS } from '../types/itinerary';
 
-export const ItineraryItemRow = ({ item, onChange, onDelete }) => {
-  // 両方の時間が入力された場合のみ逆転チェックを実行
+const ItineraryItemRow = ({ item, onChange, onDelete }) => {
   const isTimeOrderInvalid = Boolean(
     item.startTime && item.endTime && item.endTime < item.startTime
   );
@@ -32,10 +31,7 @@ export const ItineraryItemRow = ({ item, onChange, onDelete }) => {
       sx={{
         borderRadius: 2,
         backgroundColor: '#ffffff',
-        borderLeft: (theme) =>
-          item.category === 'move'
-            ? `4px solid ${theme.palette.secondary.main}`
-            : `4px solid ${theme.palette.primary.main}`,
+        borderLeft: item.category === 'move' ? '4px solid #ed6c02' : '4px solid #1976d2',
         boxShadow: '0 2px 6px rgba(0,0,0,0.03)',
       }}
     >
@@ -129,4 +125,4 @@ export const ItineraryItemRow = ({ item, onChange, onDelete }) => {
   );
 };
 
-export default ItineraryItemRow;
+export default React.memo(ItineraryItemRow);

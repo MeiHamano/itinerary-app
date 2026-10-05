@@ -8,6 +8,7 @@ import {
 } from '@mui/material';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
+//選択中のカテゴリに応じた入力例を返す
 const getPlacePlaceholder = (category) => {
   switch (category) {
     case 'meal':
@@ -20,7 +21,7 @@ const getPlacePlaceholder = (category) => {
       return '例: ホテルチェックイン、荷物預け入れ';
   }
 };
-
+//選択中のカテゴリに応じた入力ラベルを却す
 const getPlaceLabel = (category) => {
   switch (category) {
     case 'meal': return '店名・食事場所';
@@ -91,4 +92,4 @@ export const GeneralForm = ({ item, onChange }) => {
   );
 };
 
-export default GeneralForm;
+export default React.memo(GeneralForm);

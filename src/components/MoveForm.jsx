@@ -116,4 +116,4 @@ export const MoveForm = ({ item, onChange }) => {
   );
 };
 
-export default MoveForm;
+export default React.memo(MoveForm);
