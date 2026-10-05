@@ -6,7 +6,7 @@ import {
   IconButton,
   Tooltip,
 } from '@mui/material';
-import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import { OpenInNew as OpenInNewIcon } from '@mui/icons-material';
 
 //選択中のカテゴリに応じた入力例を返す
 const getPlacePlaceholder = (category) => {

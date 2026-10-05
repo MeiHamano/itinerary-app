@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Button, Divider } from '@mui/material';
-import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import { CalendarMonth as CalendarMonthIcon } from '@mui/icons-material';
 
 //画面最下部に仕切り線（Divider）と「次の日付を追加」ボタンを配置
 const TimelineFooter = ({ onAddDivider }) => {

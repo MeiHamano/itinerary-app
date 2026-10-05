@@ -9,9 +9,7 @@ import {
 } from '@mui/material';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import dayjs from 'dayjs';
-import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
-import AddIcon from '@mui/icons-material/Add';
-import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
+import { CalendarMonth as CalendarMonthIcon, Add as AddIcon, Delete as DeleteOutlineIcon } from "@mui/icons-material";
 
 const DateDividerRow = ({
   item,

@@ -13,8 +13,7 @@ import {
   Typography,
   Box,
 } from '@mui/material';
-import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
-import WarningAmberIcon from '@mui/icons-material/WarningAmber';
+import { Delete as DeleteOutlineIcon, WarningAmber as WarningAmberIcon } from "@mui/icons-material";
 
 import MoveForm from './MoveForm';
 import GeneralForm from './GeneralForm';
